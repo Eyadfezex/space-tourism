@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap"); /* font-family: 'Bellefair', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"); /* font-family: 'Barlow Condensed', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap"); /* font-family: 'Barlow', sans-serif; */
+
+.Hxl {
+  @apply leading-[171.9%] text-xl;
+}
+
+.Hl {
+  @apply leading-[114.6%] text-l;
+}
+
+.Hm {
+  @apply leading-[64.2%] text-m;
+}
+
+.Hs {
+  @apply leading-[36.1%] text-s;
+}
+
+.Hxs {
+  @apply leading-[33.6%] text-xs font-Barlow_C tracking-[4px];
+}
+
+.SHl {
+  @apply leading-[32.1%] text-sl;
+}
+
+.SHs {
+  @apply leading-[16.8%] text-Ss;
+}
+
+.Nav {
+  @apply leading-[19.2%] text-Nav;
+}
+
+.Body {
+  @apply leading-[180%] text-Body font-Barlow;
+}
+
+.Hxl,
+.Hl,
+.Hm,
+.Hs {
+  @apply font-Bellefair;
+}
+
+.Nav,
+.SHs {
+  @apply font-Barlow_C tracking-[2px];
+}
