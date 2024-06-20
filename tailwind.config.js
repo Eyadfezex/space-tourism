@@ -4,12 +4,18 @@ export default {
   theme: {
     fontFamily: {
       Bellefair: ["Bellefair", "serif"],
-      Barlow_C: ['"Barlow Condensed"', "sans-serif"],
+      Barlow_C: ["'Barlow Condensed'", "sans-serif"],
       Barlow: ["Barlow", "sans-serif"],
     },
     colors: {
       Navy: "#0B0D17",
       LBlue: "#D0D6F9",
+      white: "#fff",
+    },
+    screens: {
+      m: "375px",
+      t: "768px",
+      d: "1440px",
     },
     fontSize: {
       xl: "144px",
