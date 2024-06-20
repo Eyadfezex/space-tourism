@@ -1,4 +1,9 @@
-export const navLinks = ["home", "destination", "crew", "technology"];
+export const navLinks = [
+  { id: "00", title: "home", to: "/" },
+  { id: "01", title: "destination", to: "/destination" },
+  { id: "02", title: "crew", to: "/crew" },
+  { id: "03", title: "technology", to: "technology" },
+];
 
 import {
   crew_m_1,
