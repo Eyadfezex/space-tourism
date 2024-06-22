@@ -3,11 +3,13 @@ import logo from "../assets/img/logo.png";
 export const logoImg = logo;
 
 import render_1 from "../assets/img/Render-1.png";
+import render_1_mobile from "../assets/img/Render-1-mobile.png";
 import render_2 from "../assets/img/Render-2.png";
 import render_3 from "../assets/img/Render-3.png";
 import render_4 from "../assets/img/Render-4.png";
 
 export const bg_1 = render_1;
+export const bg_1_mobile = render_1_mobile;
 export const bg_2 = render_2;
 export const bg_3 = render_3;
 export const bg_4 = render_4;
