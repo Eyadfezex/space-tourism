@@ -39,7 +39,7 @@
 }
 
 .Body {
-  @apply text-body  font-barlow;
+  @apply text-body leading-[180%]  font-barlow;
 }
 
 .Hxl,
@@ -65,9 +65,19 @@
   }
 }
 
+@media (min-width: 768px) {
+  .Home-bg {
+    background-size: 100%;
+  }
+}
+
 /* tablet media query */
 
 @media (min-width: 768px) {
+  .Hxl {
+    @apply text-desktop-extraLarge;
+  }
+
   .Hl {
     @apply text-tablet-large;
   }
@@ -118,4 +128,12 @@
   .Body {
     @apply text-desktop-body;
   }
+}
+
+/* hover effects */
+
+.explore:hover {
+  box-shadow: 0px 0px 5px 65px rgb(255 255 255 / 30%);
+  -webkit-box-shadow: 0px 0px 5px 65px rgb(255 255 255 / 30%);
+  -moz-box-shadow: 0px 0px 5px 65px rgb(255 255 255 / 30%);
 }
