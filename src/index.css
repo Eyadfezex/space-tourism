@@ -6,50 +6,116 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap"); /* font-family: 'Barlow', sans-serif; */
 
-.Hxl {
-  @apply leading-[171.9%] text-xl;
-}
-
-.Hl {
-  @apply leading-[114.6%] text-l;
-}
-
-.Hm {
-  @apply leading-[64.2%] text-m;
-}
-
-.Hs {
-  @apply leading-[36.1%] text-s;
-}
-
-.Hxs {
-  @apply leading-[33.6%] text-xs font-Barlow_C tracking-[4px];
-}
-
 .SHl {
-  @apply leading-[32.1%] text-Sl;
+  @apply text-SubLarge;
 }
 
 .SHs {
-  @apply leading-[16.8%] text-Ss;
+  @apply text-SubSmall;
+}
+
+.Hxl {
+  @apply text-extraLarge;
+}
+
+.Hl {
+  @apply text-large;
+}
+
+.Hm {
+  @apply text-medium;
+}
+
+.Hs {
+  @apply text-small;
+}
+
+.Hxs {
+  @apply text-extraSmall  font-barlowCondensed tracking-[4px];
 }
 
 .Nav {
-  @apply leading-[19.2%] text-Nav;
+  @apply text-nav;
 }
 
 .Body {
-  @apply leading-[180%] text-Body font-Barlow;
+  @apply text-body  font-barlow;
 }
 
 .Hxl,
 .Hl,
 .Hm,
 .Hs {
-  @apply font-Bellefair;
+  @apply font-bellefair;
 }
 
 .Nav,
 .SHs {
-  @apply font-Barlow_C tracking-[2px];
+  @apply font-barlowCondensed tracking-[2px];
+}
+
+/* home page background media */
+.Home-bg {
+  background-image: url(./assets/img/Render-1.png);
+}
+
+@media (max-width: 768px) {
+  .Home-bg {
+    background-image: url("./assets/img/Render-1-mobile.png");
+  }
+}
+
+/* tablet media query */
+
+@media (min-width: 768px) {
+  .Hl {
+    @apply text-tablet-large;
+  }
+
+  .Hm {
+    @apply text-tablet-medium;
+  }
+
+  .Hs {
+    @apply text-tablet-small;
+  }
+
+  .Hxs {
+    @apply text-tablet-extraSmall;
+  }
+
+  .Body {
+    @apply text-tablet-body;
+  }
+}
+
+/* Desktop media query */
+
+@media (min-width: 1440px) {
+  .Hxl {
+    @apply text-desktop-extraLarge;
+  }
+
+  .Hl {
+    @apply text-desktop-large;
+  }
+
+  .Hm {
+    @apply text-desktop-medium;
+  }
+
+  .Hs {
+    @apply text-desktop-small;
+  }
+
+  .Hxs {
+    @apply text-desktop-extraSmall;
+  }
+  .nav {
+    @apply text-desktop-nav;
+  }
+
+  .Body {
+    @apply text-desktop-body;
+  }
 }
