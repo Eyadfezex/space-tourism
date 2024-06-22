@@ -1,5 +1,10 @@
+import { Home } from "./pages/Home";
 function App() {
-  return <main></main>;
+  return (
+    <div className="h-full">
+      <Home />
+    </div>
+  );
 }
 
 export default App;
