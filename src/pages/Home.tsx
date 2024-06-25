@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { NavBar } from "../components/navBar/NavBar";
 
 export const Home = () => {
@@ -18,7 +19,7 @@ export const Home = () => {
           </div>
           <div className="mt-[8rem] tablet:mt-[6rem] desktop:mr-[5%]">
             <button className="text-center relative z-10 uppercase bg-white text-navy w-[144px] tablet:w-[220px] tablet:h-[220px] desktop:w-[270px] desktop:h-[270px] explore h-[144px] rounded-full Hs transition-all ">
-              explore
+              <Link to={"/destination"}>explore</Link>
             </button>
           </div>
         </div>
