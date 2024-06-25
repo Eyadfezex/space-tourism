@@ -1,13 +1,15 @@
 import { IoMenuSharp } from "react-icons/io5";
 import { logoImg } from "../../utils";
 import { navLinks } from "../../constants";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 export const NavBar = () => {
   return (
     <nav className=" w-full desktop:pt-10">
       <div className="flex justify-between items-center">
         <div className="tablet:w-[160px] pl-7 tablet:pl-0 py-5 flex justify-center">
-          <img src={logoImg} alt="logo" width={48} />
+          <Link to={"/"}>
+            <img src={logoImg} alt="logo" width={48} />
+          </Link>
         </div>
         <button className="py-7 px-7  tablet:hidden">
           <IoMenuSharp className="text-lightBlue" size={50} />
