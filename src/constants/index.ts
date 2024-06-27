@@ -20,6 +20,7 @@ import {
 
 export const crewData = [
   {
+    id: "1",
     position: "commander",
     name: "Douglas Hurley",
     description:
@@ -27,6 +28,7 @@ export const crewData = [
     img: crew_m_1,
   },
   {
+    id: "2",
     position: "Mission Specialist ",
     name: "MARK SHUTTLEWORTH",
     description:
@@ -34,6 +36,7 @@ export const crewData = [
     img: crew_m_2,
   },
   {
+    id: "3",
     position: "PILOT",
     name: "Victor Glover",
     description:
