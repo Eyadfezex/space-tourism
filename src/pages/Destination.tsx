@@ -37,7 +37,7 @@ export const Destination = () => {
           </ul>
           <div className="text-center px-5 tablet:px-[7rem] desktop:px-0 desktop:text-start">
             <h2 className="Hl uppercase mt-3">{destination?.name}</h2>
-            <p className=" text-lightBlue after:w-full after:h-[1.5px] after:bg-[#53565e] after:mt-8 after:block desktop:after:mt-10">
+            <p className=" text-lightBlue after:w-full Body after:h-[1.5px] after:bg-[#53565e] after:mt-8 after:block desktop:after:mt-10">
               {destination?.description}
             </p>
             <div className="flex flex-col items-center text-center gap-5 my-5 tablet:flex-row justify-center desktop:justify-start tablet:gap-[35%] desktop:gap-[5rem] desktop:mt-10">
