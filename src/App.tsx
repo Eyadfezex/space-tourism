@@ -5,6 +5,7 @@ import { Destination } from "./pages/Destination";
 import { Home } from "./pages/Home";
 import { Loading } from "./components/loading-screen/Loading";
 import { Routes, Route } from "react-router-dom";
+import { Crew } from "./pages/Crew";
 function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
@@ -15,7 +16,10 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1400);
+  }, [location.pathname]);
+  useEffect(() => {
+    setLoading(true);
   }, [location.pathname]);
 
   return (
@@ -27,6 +31,7 @@ function App() {
           path="/destination"
           element={loading ? <Loading /> : <Destination />}
         />
+        <Route path="/crew" element={loading ? <Loading /> : <Crew />} />
       </Routes>
     </div>
   );
