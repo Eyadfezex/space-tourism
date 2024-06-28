@@ -6,6 +6,9 @@ import { Home } from "./pages/Home";
 import { Loading } from "./components/loading-screen/Loading";
 import { Routes, Route } from "react-router-dom";
 import { Crew } from "./pages/Crew";
+import SideBar from "./components/side-bar/SideBar";
+import { NavBar } from "./components/navBar/NavBar";
+import { SideBarProvider } from "./context/SideBarContext";
 function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
@@ -24,15 +27,22 @@ function App() {
 
   return (
     <div className="h-full">
-      <Routes>
-        <Route index element={loading ? <Loading /> : <Home />} />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <SideBarProvider>
+            <SideBar />
+            <NavBar />
+          </SideBarProvider>
 
-        <Route
-          path="/destination"
-          element={loading ? <Loading /> : <Destination />}
-        />
-        <Route path="/crew" element={loading ? <Loading /> : <Crew />} />
-      </Routes>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/destination" element={<Destination />} />
+            <Route path="/crew" element={<Crew />} />
+          </Routes>
+        </>
+      )}
     </div>
   );
 }
