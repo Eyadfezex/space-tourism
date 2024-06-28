@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { NavBar } from "../components/navBar/NavBar";
 import { bg_3 } from "../utils";
 import { crewData } from "../constants";
 
@@ -8,11 +7,10 @@ export const Crew = () => {
   const crew = crewData.find((item) => item.id === crewM);
   return (
     <main
-      className="bg-cover bg-center desktop:pb-12  "
+      className="bg-cover bg-center desktop:pb-20 "
       style={{ backgroundImage: `url(${bg_3})` }}
     >
-      <NavBar />
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center pt-[10rem]">
         <div className="flex flex-col items-center desktop:flex-row desktop:px-[10rem]">
           <div className="text-center desktop:text-start flex flex-col desktop:items-start ">
             <h1 className="  gap-5 text-white uppercase Hxs relative desktop:top-[-9rem] ">

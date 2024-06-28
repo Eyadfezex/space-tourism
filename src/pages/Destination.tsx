@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { NavBar } from "../components/navBar/NavBar";
 import { destinationsData } from "../constants";
 import { bg_2 } from "../utils";
 
@@ -11,8 +10,7 @@ export const Destination = () => {
       className="text-white  bg-cover bg-center "
       style={{ backgroundImage: `url(${bg_2})` }}
     >
-      <NavBar />
-      <div className="flex items-center gap-4 Hxs justify-center mt-7 tablet:justify-start tablet:ml-14 desktop:ml-[12rem] tablet:mt-[4rem]">
+      <div className="flex items-center gap-4 Hxs justify-center pt-[10rem] tablet:justify-start tablet:ml-14 desktop:ml-[12rem] tablet:pt-[10rem] ">
         <span className="font-extrabold text-[#53565e]">01</span>
         <h1 className="uppercase">pick your destination</h1>
       </div>
