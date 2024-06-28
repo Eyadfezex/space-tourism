@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Component } from "react";
 import { withRouter } from "storybook-addon-react-router-v6";
-import SideBar from "./SideBar";
+import { SideBar } from "./SideBar";
 
-const meta: Meta<Component> = {
+const meta: Meta<typeof SideBar> = {
   title: "Side-bar",
   component: SideBar,
   decorators: [withRouter],

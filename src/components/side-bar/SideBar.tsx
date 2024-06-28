@@ -7,7 +7,7 @@ import { SideBarContext } from "../../context/SideBarContext";
 interface props {
   classes?: string;
 }
-const SideBar = ({ classes }: props) => {
+export const SideBar = ({ classes }: props) => {
   const Active = useContext(SideBarContext);
   return (
     <div
@@ -43,5 +43,3 @@ const SideBar = ({ classes }: props) => {
     </div>
   );
 };
-
-export default SideBar;

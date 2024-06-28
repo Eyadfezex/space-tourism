@@ -4,6 +4,7 @@ import { navLinks } from "../../constants";
 import { NavLink, Link } from "react-router-dom";
 import { useContext } from "react";
 import { SideBarContext } from "../../context/SideBarContext";
+
 export const NavBar = () => {
   const Active = useContext(SideBarContext);
   return (
