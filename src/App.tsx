@@ -9,12 +9,10 @@ import { Crew } from "./pages/Crew";
 import { SideBar } from "./components/side-bar/SideBar";
 import { NavBar } from "./components/navBar/NavBar";
 import { SideBarProvider } from "./context/SideBarContext";
+import { Tech } from "./pages/Tech";
 function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
-  useEffect(() => {
-    location.pathname !== "/" ? (window.location.href = "/") : "";
-  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -40,6 +38,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/destination" element={<Destination />} />
             <Route path="/crew" element={<Crew />} />
+            <Route path="/technology" element={<Tech />} />
           </Routes>
         </>
       )}
