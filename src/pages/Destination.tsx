@@ -7,7 +7,7 @@ export const Destination = () => {
   const destination = destinationsData.find((item) => item.id === des);
   return (
     <main
-      className="text-white  bg-cover bg-center "
+      className="text-white bg-center bg-cover "
       style={{ backgroundImage: `url(${bg_2})` }}
     >
       <div className="flex items-center gap-4 Hxs justify-center pt-[10rem] tablet:justify-start tablet:ml-14 desktop:ml-[12rem] tablet:pt-[10rem] ">
@@ -22,7 +22,7 @@ export const Destination = () => {
           className="w-[55%] tablet:w-[45%] desktop:w-[30%]"
         />
         <div className="flex flex-col items-center desktop:items-start desktop:w-[25%]">
-          <ul className="flex gap-5 Nav uppercase ">
+          <ul className="flex gap-5 uppercase Nav ">
             {destinationsData.map((item) => (
               <li
                 key={item.id}
@@ -34,22 +34,22 @@ export const Destination = () => {
             ))}
           </ul>
           <div className="text-center px-5 tablet:px-[7rem] desktop:px-0 desktop:text-start">
-            <h2 className="Hl uppercase mt-3">{destination?.name}</h2>
+            <h2 className="mt-3 uppercase Hl">{destination?.name}</h2>
             <p className=" text-lightBlue after:w-full Body after:h-[1.5px] after:bg-[#53565e] after:mt-8 after:block desktop:after:mt-10">
               {destination?.description}
             </p>
             <div className="flex flex-col items-center text-center gap-5 my-5 tablet:flex-row justify-center desktop:justify-start tablet:gap-[35%] desktop:gap-[5rem] desktop:mt-10">
               <div>
-                <span className="SHs text-lightBlue uppercase">
+                <span className="uppercase SHs text-lightBlue">
                   Avg. Distance
                 </span>
-                <p className="SHl uppercase">{destination?.distance}</p>
+                <p className="uppercase SHl">{destination?.distance}</p>
               </div>
               <div>
-                <span className="SHs text-lightBlue uppercase">
+                <span className="uppercase SHs text-lightBlue">
                   Est. travel time
                 </span>
-                <p className="SHl uppercase">{destination?.travelTime}</p>
+                <p className="uppercase SHl">{destination?.travelTime}</p>
               </div>
             </div>
           </div>

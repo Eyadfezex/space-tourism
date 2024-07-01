@@ -11,7 +11,7 @@ export const SideBar = ({ classes }: props) => {
   const Active = useContext(SideBarContext);
   return (
     <div
-      className={`h-screen absolute right-0 w-[65%] tablet:hidden top-0 backdrop-blur-md z-20 overflow-hidden ${classes} ${Active.active ? "block" : "hidden"}`}
+      className={`h-screen  fixed right-0 w-[65%] tablet:hidden top-0 backdrop-blur-md z-20 overflow-hidden ${classes} ${Active.active ? "block" : "hidden"}`}
     >
       <div className="flex flex-col mt-[2rem] px-5 ">
         <div className="flex justify-end">
@@ -32,7 +32,7 @@ export const SideBar = ({ classes }: props) => {
                     : ""
               }
             >
-              <div className="flex   gap-4 text-white uppercase Nav">
+              <div className="flex gap-4 text-white uppercase Nav">
                 <p>{item.id}</p>
                 <p>{item.title}</p>
               </div>
