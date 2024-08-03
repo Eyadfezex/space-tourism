@@ -1,20 +1,10 @@
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useState } from "react";
 import { PropagateLoader } from "react-spinners";
 export const Loading = () => {
   const [loading, setLoading] = useState(true);
-  const location = useLocation();
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-  }, [location.pathname]);
-
-  useEffect(() => {
-    setLoading(true);
-  }, [location.pathname]);
-
+  window.onload = function () {
+    setLoading(false);
+  };
   return (
     <div
       className={`absolute z-20 flex items-center justify-center w-full h-screen bg-navy ${loading ? "block" : "hidden"}`}
