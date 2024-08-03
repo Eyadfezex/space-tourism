@@ -7,7 +7,7 @@ export const Destination = () => {
   const destination = destinationsData.find((item) => item.id === des);
   return (
     <main
-      className="text-white bg-center bg-cover "
+      className="text-white bg-center bg-cover h-screen "
       style={{ backgroundImage: `url(${bg_2})` }}
     >
       <div className="flex items-center gap-4 Hxs justify-center pt-[10rem] tablet:justify-start tablet:ml-14 desktop:ml-[12rem] tablet:pt-[10rem] ">
