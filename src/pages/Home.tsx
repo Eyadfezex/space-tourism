@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <main className="bg-cover Home-bg h-screen bg-center">
-      <div className="flex justify-center pt-[10rem] desktop:pt-[25rem]">
+      <div className="flex justify-center pt-[10rem] desktop:pt-[20rem]">
         <div className="flex flex-col items-center desktop:flex-row desktop:justify-between desktop:mx-14">
           <div className="text-center desktop:text-start desktop:w-[40%] text-white px-5 tablet:px-[6rem]">
             <h1 className="Hxs text-lightBlue">SO, YOU WANT TO TRAVEL TO</h1>
